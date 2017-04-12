@@ -1,0 +1,23 @@
+
+/*font-family: 'Crete Round', serif;*/
+
+body {
+	background-image: url(../images/topdown.jpg);
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Crete Round', serif;
+	color: #FF00FF;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#updatedProfile {
+	font-family: 'Crete Round', serif;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
