@@ -15,7 +15,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<title>Employee Profile App</title> 
+	<title>Employee Bio App</title> 
 </head>
 
  
@@ -24,10 +24,16 @@
 	<form class="container">
 
 		<div id="newProfile" class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
-    		<h1>New Employee Profile</h1>
+    		<h1>Welcome to RecorNeo Pharma - New Employee Profile</h1>
     		<!-- new profile -->
 			<form>
 				<!-- NAME -->
+				<p>
+					At RecorNeo Pharma, we focus on developing medicines and diagnostics that will help patients live longer, better lives.
+				</p>
+				<p>
+					Welcome to i-Benefits, a flexible benefit for all RecorNeo Pharma employees. Please fill out the form below before proceeding:
+				</p>
 				<div class="form-group">
 					<input type="text" id="userfname" class="form-control" placeholder="First Name">
 					<input type="text" id="userlname" class="form-control" placeholder="Last Name">
@@ -42,7 +48,7 @@
 					  <input type="radio" name="radio1" class="userGender" value="female"> Female
 					</label>
 					<label class="radio-inline">
-					  <input type="radio" name="radio1" class="userGender" value="female"> Other
+					  <input type="radio" name="radio1" class="userGender" value="Other"> Other
 					</label>
 
 				</div>
@@ -57,25 +63,25 @@
 				</div>
 			<!-- 	HOME ADDRESS -->
 				<div class="form-group">
-					<input type="number" id="userAddress" class="form-control" placeholder="Address">
+					<input type="text" id="userAddress" class="form-control" placeholder="Address">
 				</div>
 				<div class="form-group">
-					<input type="number" id="userCity" class="form-control" placeholder="City">
+					<input type="text" id="userCity" class="form-control" placeholder="City">
 				</div>
 				<div class="form-group">
-					<input type="number" id="userState" class="form-control" placeholder="State">
+					<input type="text" id="userState" class="form-control" placeholder="State">
 				</div>
 				<div class="form-group">
-					<input type="number" id="userZip" class="form-control" placeholder="Zip Code">
+					<input type="text" id="userZip" class="form-control" placeholder="Zip Code">
 				</div>
 
 				<!-- EMPLOYEE BENEFITS MENU -->
 				<div class="form-group">
-					<select class="form-control" id="myChoice">
-						<option value="Health" class="userMed">Select Health Benefits</option>
-						<option value="Medical" class="userMed">Medical Care</option>
-						<option value="Dental" class="userMed">Dental Care</option>
-						<option value="Vision" class="userMed">Vision Care</option>
+					<select class="form-control" id="myChoiceDropDown">
+						<option value="Health" class="userMedDropDown">Select Health Benefits</option>
+						<option value="Medical" class="userMedDropDown">Medical Care</option>
+						<option value="Dental" class="userMedDropDown">Dental Care</option>
+						<option value="Vision" class="userMedDropDown">Vision Care</option>
 					</select>
 				</div>
 				<!-- CONTINENT OF BIRTH -->
@@ -112,6 +118,7 @@
 
     	</div><!-- /.col-sm-6 -->
     	
+    	<form class="container">
     	<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
     		<h1>Employee Information:</h1>
     		<!-- updated profile -->
@@ -120,11 +127,20 @@
     			<h3 id="newUserGender"></h3>
     			<h3 id="newUserEmail"></h3>
     			<h3 id="newUserPhone"></h3>
-    			<h3 id="newUserColor"></h3>
+    			<h3 id="newUserAddress"></h3>
+    			<h3 id="newUserCity"></h3>
+    			<h3 id="newUserState"></h3>
+    			<h3 id="newUserZip"></h3>
+    			<h3 id="newUserMedical"></h3>
     			<h3 id="newUserBirth"></h3>
+			<!-- <div id="video"> -->
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/IcxZqJcqd84" frameborder="0" allowfullscreen></iframe>
+			<!-- </div> -->
+
     		</div><!-- /#updatedProfile -->
 
     	</div><!-- /.col-sm-6 -->
+    	</form>
 
     </div><!-- /.container -->
 
@@ -132,7 +148,6 @@
 		
 	</form>
 
-	
 
 
 <footer> 

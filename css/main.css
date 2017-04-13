@@ -2,22 +2,58 @@
 /*font-family: 'Crete Round', serif;*/
 
 body {
-	background-image: url(../images/topdown.jpg);
+	background-image: url(../images/biopharma.jpg);
 	background-size: cover;
 }
 
 h1 {
 	font-family: 'Crete Round', serif;
-	color: #FF00FF;
-	font-size: 70px;
+	color: #575787;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px;
+}
+
+h2, h3 {
+	font-family: 'Crete Round', serif;
+	color: black;
+	font-size: 25px;
+	margin: 10px;
+}
+
+p {
+	font-family: 'Crete Round', serif;
+	color: black;
+	font-size: 20px;
+}
+
+.container {
+	background-color: rgba(208,219,223,0.6);
+}
+
+.form-control {
+	font-size: 20px;
+	margin: 15px;
+	padding: 20px;
+}
+
+#updatedProfile {
+	display: none;
+	font-family: 'Crete Round', serif;
+	color: white;
+	font-size: 60px;
 	font-weight: bold;
 	text-align: center;
 }
 
-#updatedProfile {
-	font-family: 'Crete Round', serif;
-	color: white;
-	font-size: 50px;
-	font-weight: bold;
+#genderID, #myCountry {
+	font-size: 25px;
+	font-family: 'Crete Round', serif;	
 	text-align: center;
+	color: #575787;
 }
+
+/*.btn btn-default {
+	text-align: center;
+}*/
