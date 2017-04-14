@@ -34,7 +34,7 @@ document.getElementById('newUserGender').appendChild(genText);
 
 
 var userEmail = document.getElementById('userEmail').value;
-// console.log(userEmail);
+console.log(userEmail);
 var userMessage = document.createTextNode(userEmail);
 var regExmail = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,10}$/i
 console.log(regExmail.test(userEmail));
@@ -47,7 +47,7 @@ document.getElementById('newUserEmail').appendChild(userMessage);
 
 var userPhone = document.getElementById('userPhone').value;
 var regExphone = /^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$/
-// console.log(regExphone.test(userPhone));
+console.log(regExphone.test(userPhone));
 //alternative regex: ^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$
 var userPMessage = document.createTextNode(userPhone);
 document.getElementById('newUserPhone').appendChild(userPMessage);
@@ -60,7 +60,7 @@ document.getElementById('newUserAddress').appendChild(userAddText);
 
 var userCity = document.getElementById('userCity').value;
 var regExcity = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/i
-// console.log(regExcity.test(userCity));
+console.log(regExcity.test(userCity));
 var userCText = document.createTextNode(userCity);
 document.getElementById('newUserCity').appendChild(userCText);
 
@@ -76,18 +76,22 @@ document.getElementById('newUserState').appendChild(userSText);
 
 var userZ = document.getElementById('userZip').value;
 var regExZip = /^\\d{5}(-\\d{4})?$/i
-// console.log(regExZip.test(userZip));
+console.log(regExZip.test(userZip));
 var userZText = document.createTextNode(userZ);
 document.getElementById('newUserZip').appendChild(userZText);
 
 
+//create text variable and target byClass Name. Then create empty
+//variable to store selected item from drop-down menu.
 var userChoice = document.getElementsByClassName('userMedDropDown');
 // console.log(userChoice);
 var userMed = "";
+//create for-loop, that loops thru the Med/Dental/Vision options and finds
+//the ".selected" item from drop-down (as selected by user).
 for(i = 0; i < userChoice.length; i++){
 	// console.log(i);
 	// console.log(userChoice[i].selected);
-	if(userChoice[i].selected){
+	if(userChoice[i].selected){ // use .selected method for drop-down options.
 		userMed = userChoice[i].value
 	}
 }
@@ -114,14 +118,9 @@ var userCText = document.createTextNode(country);
 document.getElementById('newUserBirth').appendChild(userCText);
 
 
-// var videoPic = document.createTextNode('<iframe width="560" height="315" src="https://www.youtube.com/embed/nxyMiJF32Zg" frameborder="0" allowfullscreen></iframe>');
-// document.getElementById('video').appendChild(videoPic);
-
-// var updatedProfile = document.getElementById('updatedProfile');
+//Use .style.display method to actually display video & profile. Currently,
+//these sections are hidden until user clicks submit button.
 updatedProfile.style.display = "block";
-
-// 	var btn = document.getElementById('sendDataButton').value
-// 	var buttonText = document.createTextNode("Thank you! Please wait while candidate profile is compiling" + btn);
 
 }
 

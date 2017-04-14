@@ -26,6 +26,7 @@ p {
 	font-family: 'Crete Round', serif;
 	color: black;
 	font-size: 20px;
+	margin-left: 35px;
 }
 
 .container {
@@ -54,6 +55,6 @@ p {
 	color: #575787;
 }
 
-/*.btn btn-default {
-	text-align: center;
-}*/
+.btn {
+	margin-top: 30px;
+}

@@ -79,9 +79,12 @@
 				<div class="form-group">
 					<select class="form-control" id="myChoiceDropDown">
 						<option value="Health" class="userMedDropDown">Select Health Benefits</option>
-						<option value="Medical" class="userMedDropDown">Medical Care</option>
-						<option value="Dental" class="userMedDropDown">Dental Care</option>
-						<option value="Vision" class="userMedDropDown">Vision Care</option>
+						<option value="Medical" class="userMedDropDown">Medical HMO</option>
+						<option value="Medical" class="userMedDropDown">Medical PPO</option>
+						<option value="Dental" class="userMedDropDown">Dental HMO</option>
+						<option value="Dental" class="userMedDropDown">Dental PPO</option>
+						<option value="Vision" class="userMedDropDown">Vision VSP</option>
+						<option value="Vision" class="userMedDropDown">AARP Vision</option>
 					</select>
 				</div>
 				<!-- CONTINENT OF BIRTH -->
@@ -106,9 +109,9 @@
 					<label class="radio-inline">
 					  <input type="radio" name="radio2" class="userBirth" value="South America"> South America
 					</label>
+					<br>
+					<button id="sendDataButton" onclick="userSubmit()" type="button" class="btn btn-default">SUBMIT</button>
 				</div>
-
-				<button id="sendDataButton" onclick="userSubmit()" type="button" class="btn btn-default">Submit</button>
 
 				<div id="results">
 
@@ -133,9 +136,11 @@
     			<h3 id="newUserZip"></h3>
     			<h3 id="newUserMedical"></h3>
     			<h3 id="newUserBirth"></h3>
-			<!-- <div id="video"> -->
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/IcxZqJcqd84" frameborder="0" allowfullscreen></iframe>
-			<!-- </div> -->
+
+    			<br>
+		<div id="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nxyMiJF32Zg" frameborder="0" allowfullscreen></iframe>
+		</div>
 
     		</div><!-- /#updatedProfile -->
 
@@ -144,8 +149,6 @@
 
     </div><!-- /.container -->
 
-
-		
 	</form>
 
 
