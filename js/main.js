@@ -14,12 +14,8 @@ document.getElementById('newUserName').appendChild(lastNText);
 
 //create text variable that obtains the className for gender.
 var gender = document.getElementsByClassName('userGender');
-//create empty text variable that contains empty string. The
-//empty string will contain selected gender (from for-loop method).
 var person = "";
 // console.log(gender);
-//create for-loop, that loops thru the gender array (3 items) and finds
-//the ".checked" gender (as selected by user).
 for(i = 0; i<gender.length; i++){
 	if(gender[i].checked){
 //create text variable for gender value.
@@ -80,18 +76,13 @@ console.log(regExZip.test(userZip));
 var userZText = document.createTextNode(userZ);
 document.getElementById('newUserZip').appendChild(userZText);
 
-
-//create text variable and target byClass Name. Then create empty
-//variable to store selected item from drop-down menu.
 var userChoice = document.getElementsByClassName('userMedDropDown');
 // console.log(userChoice);
 var userMed = "";
-//create for-loop, that loops thru the Med/Dental/Vision options and finds
-//the ".selected" item from drop-down (as selected by user).
 for(i = 0; i < userChoice.length; i++){
 	// console.log(i);
 	// console.log(userChoice[i].selected);
-	if(userChoice[i].selected){ // use .selected method for drop-down options.
+	if(userChoice[i].selected){
 		userMed = userChoice[i].value
 	}
 }
@@ -99,17 +90,11 @@ for(i = 0; i < userChoice.length; i++){
 var medText = document.createTextNode(userMed);
 document.getElementById('newUserMedical').appendChild(medText);
 
-
 //create text variable that obtains the className for birthplace.
 var userCountry = document.getElementsByClassName('userBirth');
-//create empty text variable that contains empty string. The
-//empty string will contain selected birthplave (from for-loop method).
 var country = "";
-//create for-loop, that loops thru the gender array (3 items) and finds
-//the ".checked" birthplace (as selected by user).
 for(i = 0; i<userCountry.length; i++){
 	if(userCountry[i].checked) {
-//create country variable for birthplace value.
 		country = userCountry[i].value
 	}
 }
@@ -117,10 +102,6 @@ for(i = 0; i<userCountry.length; i++){
 var userCText = document.createTextNode(country);
 document.getElementById('newUserBirth').appendChild(userCText);
 
-
-//Use .style.display method to actually display video & profile. Currently,
-//these sections are hidden until user clicks submit button.
 updatedProfile.style.display = "block";
-
 }
 
